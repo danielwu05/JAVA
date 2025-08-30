@@ -17,7 +17,7 @@ public class myFrame extends JFrame implements ActionListener {
         button.setBounds(100, 250, 100, 50);
         button.setText(":3");
         button.addActionListener(this);
-        button.setFont(new Font("Comic Sans",Font.ITALIC,13));
+        button.setFont(new Font("Comic Sans",Font.ITALIC,22));
         button.setForeground(Color.GREEN);
         button.setBackground(Color.darkGray);
         button.setBorder(BorderFactory.createEtchedBorder());
@@ -34,11 +34,11 @@ public class myFrame extends JFrame implements ActionListener {
         if(e.getSource()==button) {
             Random random = new Random();
             System.out.println("Opa sai do lugar kkkkk");
-            int randX,randY,randHeight,randWidth;
-            randX = random.nextInt(0,300);
-            randY = random.nextInt(0,300);
-            randHeight = random.nextInt(10,300);
-            randWidth = random.nextInt(10,300);
+
+            int randX = random.nextInt(0,300);
+            int randY = random.nextInt(0,300);
+            int randHeight = random.nextInt(10,300);
+            int randWidth = random.nextInt(10,300);
 
             button.setBounds(randX, randY, randWidth, randHeight);
         }
